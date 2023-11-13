@@ -35,7 +35,8 @@ pipeline {
               // expression { params.apply }
            // }
             when { expression { return params.apply } 
-                  echo "Takem"
+                   sh "aws eks update-kubeconfig --name eks_cluster"
+                   sh "kubectl apply -f deployment.yml"
                  }
             steps {
                 echo "bessem"
