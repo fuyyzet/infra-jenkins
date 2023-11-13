@@ -34,7 +34,7 @@ pipeline {
             //when {
               // expression { params.apply }
            // }
-            when { expression { return params.apply } 
+            when { expression { params.action == 'apply' } 
                  }
             steps {
                 echo "bessem"
