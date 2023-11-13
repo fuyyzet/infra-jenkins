@@ -35,7 +35,7 @@ pipeline {
               // expression { params.apply }
            // }
             when { expression { return params.apply } 
-                  echo Takem
+                  echo "Takem"
                  }
             steps {
                 echo "bessem"
